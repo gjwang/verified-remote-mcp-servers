@@ -1,0 +1,39 @@
+name: Check submission
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: directory-writes
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - id: check
+        run: node scripts/check-pr.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+      # Only validated submission JSON was merged, never executable PR code.
+      - if: steps.check.outputs.merged == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - if: steps.check.outputs.merged == 'true'
+        run: |
+          node scripts/sync.mjs
+          git config user.name 'appside-directory[bot]'
+          git config user.email 'directory@appside.build'
+          git add servers.json README.md submissions/
+          git diff --cached --quiet || git commit -m 'Publish checked MCP submission'
+          git push origin HEAD:main

@@ -1,0 +1,28 @@
+name: Sync directory
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: directory-writes
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          node scripts/sync.mjs --remote
+          git config user.name 'appside-directory[bot]'
+          git config user.email 'directory@appside.build'
+          git add servers.json README.md scripts/appside-urls.json submissions/
+          git diff --cached --quiet || git commit -m 'Refresh verified MCP directory'
+          git push origin HEAD:main
