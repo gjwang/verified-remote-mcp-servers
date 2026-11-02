@@ -1736,20 +1736,6 @@
     }
   },
   {
-    "slug": "find-my-tide",
-    "name": "Find My Tide",
-    "url": "https://api.findmytide.com/mcp",
-    "category": "Data & Analytics",
-    "auth": "Open",
-    "maintainer": "Find My Tide",
-    "site": "https://findmytide.com/mcp",
-    "check": {
-      "status": "passed",
-      "checkedAt": "2026-11-02T16:42:46.155Z",
-      "toolCount": 3
-    }
-  },
-  {
     "slug": "find-a-domain",
     "name": "Find-A-Domain",
     "url": "https://api.findadomain.dev/mcp",
@@ -1761,6 +1747,20 @@
       "status": "passed",
       "checkedAt": "2026-11-02T16:42:46.325Z",
       "toolCount": 2
+    }
+  },
+  {
+    "slug": "find-my-tide",
+    "name": "Find My Tide",
+    "url": "https://api.findmytide.com/mcp",
+    "category": "Data & Analytics",
+    "auth": "Open",
+    "maintainer": "Find My Tide",
+    "site": "https://findmytide.com/mcp",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-02T16:42:46.155Z",
+      "toolCount": 3
     }
   },
   {
@@ -4676,6 +4676,20 @@
     }
   },
   {
+    "slug": "seo-aeo-geo",
+    "name": "SEO·AEO·GEO",
+    "url": "https://seoaeogeo.app/mcp",
+    "category": "Marketing & SEO",
+    "auth": "Open",
+    "maintainer": "SEO·AEO·GEO",
+    "site": "https://seoaeogeo.app/",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-02T16:43:10.135Z",
+      "toolCount": 2
+    }
+  },
+  {
     "slug": "seo-records",
     "name": "SEO Records",
     "url": "https://api.seorecords.com/mcp",
@@ -4700,20 +4714,6 @@
     "check": {
       "status": "passed",
       "checkedAt": "2026-11-02T16:43:10.049Z",
-      "toolCount": 2
-    }
-  },
-  {
-    "slug": "seo-aeo-geo",
-    "name": "SEO·AEO·GEO",
-    "url": "https://seoaeogeo.app/mcp",
-    "category": "Marketing & SEO",
-    "auth": "Open",
-    "maintainer": "SEO·AEO·GEO",
-    "site": "https://seoaeogeo.app/",
-    "check": {
-      "status": "passed",
-      "checkedAt": "2026-11-02T16:43:10.135Z",
       "toolCount": 2
     }
   },
