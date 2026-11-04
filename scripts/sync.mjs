@@ -8,7 +8,7 @@ const save=(p,v)=>writeFileSync(p,JSON.stringify(v,null,2)+'\n');
 const compact=e=>({...Object.fromEntries(['slug','name','url','category','auth','maintainer','site'].map(k=>[k,e[k]])),check:{status:e.check.status,checkedAt:e.check.checkedAt,toolCount:e.check.toolCount}});
 let entries=read('servers.json');
 if(process.argv.includes('--remote')){
- const remote=JSON.parse((await safeFetch('https://appside.build/mcp-servers.json',{maxBytes:524288,timeout:7000,redirects:false})).body);
+ const remote=JSON.parse((await safeFetch('https://appside.build/mcp-servers.json',{maxBytes:8388608,timeout:20000,redirects:false})).body);
  if(!Array.isArray(remote)||remote.length===0)throw Error('Invalid upstream data');
  for(const e of remote){validateSubmission(Object.fromEntries(['name','url','category','site','auth','maintainer'].map(k=>[k,e[k]])),`submissions/${e.slug}.json`);if(!['passed','auth_required'].includes(e.check?.status))throw Error('Invalid upstream check');}
  const prior=new Set(read('scripts/appside-urls.json')),urls=new Set(remote.map(e=>e.url)),slugs=new Set(remote.map(e=>e.slug));

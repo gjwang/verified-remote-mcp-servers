@@ -28,7 +28,7 @@ function request(url,address,signal,maxBytes=65536,options={}) {
   });
 }
 export async function safeFetch(value,{resolveHost=lookup,transport=request,allowedHost,allowedPath,maxBytes=65536,timeout=5000,method='GET',headers={},body,acceptStatuses=[200],redirects=true,completeBody}={}) {
-  if(!Number.isInteger(maxBytes)||maxBytes<1||maxBytes>524288)throw Error('Invalid byte limit');
+  if(!Number.isInteger(maxBytes)||maxBytes<1||maxBytes>8388608)throw Error('Invalid byte limit');
   const controller=new AbortController();
   let timer;
   const deadline=new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(Error('Verification timed out'));},timeout);});
