@@ -2,7 +2,7 @@
 
 Every server is checked with a real MCP handshake: initialize + tools/list for open servers, and a 401 auth challenge for protected ones. Failures are removed. PRs are checked automatically and merged within a day — no waiting months. Checks are dated observations; auth challenges establish reachability, and we never invoke tools.
 
-1716 servers · 1008 handshakes passed · 708 require authentication · 18 categories
+1717 servers · 1009 handshakes passed · 708 require authentication · 18 categories
 
 [Add a server](CONTRIBUTING.md) · [Data license: CC BY 4.0](LICENSE-DATA) · [Code license: MIT](LICENSE)
 
@@ -682,6 +682,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | --- | --- | --- | --- | --- |
 | [abm.dev](https://appside.build/mcp-servers/abm-dev/) | <code>https://mcp.abm.dev/mcp</code> | OAuth | 🔐 auth required | [abm.dev](https://abm.dev/) |
 | [Agentprofile](https://appside.build/mcp-servers/agentprofile/) | <code>https://agentprofile.everyai-com.workers.dev/mcp</code> | OAuth | 🔐 auth required | [Agentprofile](https://github.com/everyai-com/agentprofile) |
+| [AgentSEO](https://appside.build/mcp-servers/agentseo/) | <code>https://www.agentseo.dev/mcp</code> | API Key | ✅ handshake · 45 tools | [AgentSEO](https://www.agentseo.dev/seo-mcp-server) |
 | [AltoRank](https://appside.build/mcp-servers/altorank/) | <code>https://app.altorank.co/api/mcp</code> | OAuth | 🔐 auth required | [AltoRank](https://github.com/AltoRank/altorank) |
 | [Asoatlas](https://appside.build/mcp-servers/mcp-9/) | <code>https://asoatlas.com/mcp</code> | OAuth | 🔐 auth required | [Mcp](https://github.com/asoatlas/mcp) |
 | [Asohawk](https://appside.build/mcp-servers/asohawk/) | <code>https://asohawk.cc/api/mcp</code> | other | 🔐 auth required | [Asohawk](https://github.com/prodocik/asohawk) |

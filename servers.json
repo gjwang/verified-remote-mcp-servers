@@ -1190,6 +1190,20 @@
     }
   },
   {
+    "slug": "agentseo",
+    "name": "AgentSEO",
+    "url": "https://www.agentseo.dev/mcp",
+    "category": "Marketing & SEO",
+    "auth": "API Key",
+    "maintainer": "AgentSEO",
+    "site": "https://www.agentseo.dev/seo-mcp-server",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-05T09:17:10.742Z",
+      "toolCount": 45
+    }
+  },
+  {
     "slug": "agentskills-io",
     "name": "agentskills.io",
     "url": "https://mcp.skillrepo.dev/api/mcp",
