@@ -1199,7 +1199,7 @@
     "site": "https://www.agentseo.dev/seo-mcp-server",
     "check": {
       "status": "passed",
-      "checkedAt": "2026-11-05T09:17:10.742Z",
+      "checkedAt": "2026-11-05T10:59:05.387Z",
       "toolCount": 45
     }
   },
@@ -2313,13 +2313,13 @@
     "slug": "atlas-red",
     "name": "Atlas Red",
     "url": "https://app.atlas-red.com/mcp",
-    "category": "Travel & Local",
+    "category": "Productivity",
     "auth": "OAuth",
     "maintainer": "Atlas Red",
     "site": "https://atlas-red.com/",
     "check": {
       "status": "auth_required",
-      "checkedAt": "2026-11-02T22:07:43.157Z",
+      "checkedAt": "2026-11-05T05:32:38.942Z",
       "toolCount": null
     }
   },
@@ -3077,6 +3077,20 @@
       "status": "auth_required",
       "checkedAt": "2026-11-02T16:42:38.100Z",
       "toolCount": null
+    }
+  },
+  {
+    "slug": "blockvectra",
+    "name": "BlockVectra",
+    "url": "https://docs.blockvectra.com/mcp",
+    "category": "Crypto & Web3",
+    "auth": "Open",
+    "maintainer": "BlockVectra",
+    "site": "https://github.com/blockvectra/mcp",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-04T16:20:01.519Z",
+      "toolCount": 15
     }
   },
   {
@@ -5093,6 +5107,20 @@
       "status": "passed",
       "checkedAt": "2026-11-02T22:12:33.580Z",
       "toolCount": 101
+    }
+  },
+  {
+    "slug": "cordium",
+    "name": "cordium",
+    "url": "https://cordium.best/mcp",
+    "category": "Developer Tools",
+    "auth": "Open",
+    "maintainer": "cordium",
+    "site": "https://cordium.best/",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-05T07:54:40.699Z",
+      "toolCount": 5
     }
   },
   {
@@ -21560,6 +21588,20 @@
     }
   },
   {
+    "slug": "toolspad",
+    "name": "ToolsPad",
+    "url": "https://app.toolspad.com/mcp",
+    "category": "Productivity",
+    "auth": "OAuth",
+    "maintainer": "ToolsPad",
+    "site": "https://toolspad.com/mcp?utm_source=appside&utm_medium=referral&utm_campaign=aidm&utm_id=aidm_organic_v1&utm_content=appside_mcp_profile_001",
+    "check": {
+      "status": "auth_required",
+      "checkedAt": "2026-11-04T11:54:40.437Z",
+      "toolCount": null
+    }
+  },
+  {
     "slug": "toolsthatdontupload",
     "name": "Toolsthatdontupload",
     "url": "https://toolsthatdontupload.com/mcp",
@@ -22877,15 +22919,15 @@
   },
   {
     "slug": "wa-mcp",
-    "name": "WA MCP",
+    "name": "WhatsApp MCP",
     "url": "https://server.wa-mcp.com/mcp",
     "category": "Communication",
     "auth": "OAuth",
-    "maintainer": "WA MCP",
+    "maintainer": "WhatsApp MCP",
     "site": "https://wa-mcp.com/",
     "check": {
       "status": "auth_required",
-      "checkedAt": "2026-11-02T16:43:17.624Z",
+      "checkedAt": "2026-11-04T14:28:46.545Z",
       "toolCount": null
     }
   },
@@ -23464,6 +23506,20 @@
     }
   },
   {
+    "slug": "wordradar",
+    "name": "WordRadar",
+    "url": "https://www.wordradar.dev/mcp",
+    "category": "Marketing & SEO",
+    "auth": "API Key",
+    "maintainer": "WordRadar",
+    "site": "https://www.wordradar.dev/",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-04T17:22:44.027Z",
+      "toolCount": 9
+    }
+  },
+  {
     "slug": "workspacealberta",
     "name": "WorkspaceAlberta",
     "url": "https://elbowsupknivesout.warreandvavasour.com/mcp",
@@ -23685,6 +23741,20 @@
       "status": "auth_required",
       "checkedAt": "2026-11-02T22:08:23.075Z",
       "toolCount": null
+    }
+  },
+  {
+    "slug": "xgr-mcp-gateway",
+    "name": "XGR MCP Gateway",
+    "url": "https://mcp.xgr.network/mcp",
+    "category": "Crypto & Web3",
+    "auth": "Open",
+    "maintainer": "XGR MCP Gateway",
+    "site": "https://xgr.network/",
+    "check": {
+      "status": "passed",
+      "checkedAt": "2026-11-04T14:12:38.692Z",
+      "toolCount": 112
     }
   },
   {

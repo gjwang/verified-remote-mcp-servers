@@ -2,7 +2,7 @@
 
 Every server is checked with a real MCP handshake: initialize + tools/list for open servers, and a 401 auth challenge for protected ones. Failures are removed. PRs are checked automatically and merged within a day — no waiting months. Checks are dated observations; auth challenges establish reachability, and we never invoke tools.
 
-1717 servers · 1009 handshakes passed · 708 require authentication · 18 categories
+1722 servers · 1013 handshakes passed · 709 require authentication · 18 categories
 
 [Add a server](CONTRIBUTING.md) · [Data license: CC BY 4.0](LICENSE-DATA) · [Code license: MIT](LICENSE)
 
@@ -85,6 +85,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [ComputeFirst](https://appside.build/mcp-servers/computefirst/) | <code>https://computefirst.net/mcp</code> | API Key | ✅ handshake · 15 tools | [ComputeFirst](https://computefirst.net/docs) |
 | [Connections Gemini Extension](https://appside.build/mcp-servers/connections-gemini-extension/) | <code>https://studio.connections.icu/v1/mcp</code> | OAuth | 🔐 auth required | [Connections Gemini Extension](https://github.com/Lunarwerx/connections-gemini-extension) |
 | [ConnectorReport](https://appside.build/mcp-servers/connectorreport/) | <code>https://connectorreport.com/api/mcp</code> | Open | ✅ handshake · 5 tools | [ConnectorReport](https://connectorreport.com/) |
+| [cordium](https://appside.build/mcp-servers/cordium/) | <code>https://cordium.best/mcp</code> | Open | ✅ handshake · 5 tools | [cordium](https://cordium.best/) |
 | [Cortex](https://appside.build/mcp-servers/cortex/) | <code>https://mcp.cortex.io/mcp</code> | API Key | 🔐 auth required | [Cortex](https://cortex.io/) |
 | [Ctlsurf](https://appside.build/mcp-servers/ctlsurf/) | <code>https://app.ctlsurf.com/api/mcp</code> | other | 🔐 auth required | [Ctlsurf](https://github.com/phenx-inc/ctlsurf-claude-plugin) |
 | [Ctxt Agents](https://appside.build/mcp-servers/ctxt-agents/) | <code>https://ctxt.io/mcp</code> | API Key | ✅ handshake · 3 tools | [Ctxt Agents](https://github.com/ctxt-io/ctxt-agents) |
@@ -409,6 +410,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [arkerah](https://appside.build/mcp-servers/arkerah/) | <code>https://app.arkerah.com/api/mcp</code> | OAuth | 🔐 auth required | [arkerah](https://arkerah.com/) |
 | [Asana](https://appside.build/mcp-servers/asana/) | <code>https://mcp.asana.com/sse</code> | OAuth | 🔐 auth required | [Asana](https://asana.com/) |
 | [Astranl](https://appside.build/mcp-servers/astranl/) | <code>https://astranl.com/mcp/streamable</code> | other | ✅ handshake · 31 tools | [Astranl](https://github.com/tolegm/astranl-mcp) |
+| [Atlas Red](https://appside.build/mcp-servers/atlas-red/) | <code>https://app.atlas-red.com/mcp</code> | OAuth | 🔐 auth required | [Atlas Red](https://atlas-red.com/) |
 | [Attio](https://appside.build/mcp-servers/attio/) | <code>https://mcp.attio.com/mcp</code> | OAuth | 🔐 auth required | [Attio](https://attio.com/) |
 | [Bay Area Mobile Dog Wash](https://appside.build/mcp-servers/bay-area-mobile-dog-wash/) | <code>https://bayareamobiledogwash.com/api/mcp</code> | Open | ✅ handshake · 6 tools | [Bay Area Mobile Dog Wash](https://bayareamobiledogwash.com/) |
 | [BirkinBagStock](https://appside.build/mcp-servers/birkinbagstock/) | <code>https://birkinbagstock.com/mcp</code> | other | ✅ handshake · 12 tools | [BirkinBagStock](https://birkinbagstock.com/llms.txt) |
@@ -494,6 +496,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [The Wayland Post](https://appside.build/mcp-servers/the-wayland-post/) | <code>https://api.townbrief.com/sse</code> | other | 🔐 auth required | [The Wayland Post](https://www.waylandpost.org/) |
 | [tl;dv](https://appside.build/mcp-servers/tl-dv/) | <code>https://mcp.tldv.io/mcp</code> | OAuth | 🔐 auth required | [tl;dv](https://tldv.io/) |
 | [Todoist](https://appside.build/mcp-servers/todoist/) | <code>https://ai.todoist.net/mcp</code> | OAuth | 🔐 auth required | [Doist](https://todoist.com/) |
+| [ToolsPad](https://appside.build/mcp-servers/toolspad/) | <code>https://app.toolspad.com/mcp</code> | OAuth | 🔐 auth required | [ToolsPad](https://toolspad.com/mcp?utm_source=appside&utm_medium=referral&utm_campaign=aidm&utm_id=aidm_organic_v1&utm_content=appside_mcp_profile_001) |
 | [TrueAI](https://appside.build/mcp-servers/trueai/) | <code>https://www.shiflowai.cloud/mcp</code> | other | ✅ handshake · 4 tools | [TrueAI](https://github.com/chenyujing1234-netizen/trueAI) |
 | [Unblockd](https://appside.build/mcp-servers/unblockd/) | <code>https://unblockd.ai/mcp</code> | OAuth | 🔐 auth required | [Unblockd](https://unblockd.ai/) |
 | [Vibe Prospecting](https://appside.build/mcp-servers/vibe-prospecting/) | <code>https://vibeprospecting.explorium.ai/mcp</code> | OAuth | 🔐 auth required | [Vibe Prospecting](https://vibeprospecting.ai/) |
@@ -578,7 +581,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [TextKit](https://appside.build/mcp-servers/textkit/) | <code>https://mcp.jointextkit.com/</code> | other | ✅ handshake · 152 tools | [TextKit](https://jointextkit.com/docs/mcp) |
 | [Trustycap](https://appside.build/mcp-servers/trustycap/) | <code>https://mcp.trustycap.com/mcp</code> | other | ✅ handshake · 13 tools | [Trustycap](https://github.com/TrustyCap-Technologies/trustycap-mcp) |
 | [Unitpost](https://appside.build/mcp-servers/unitpost/) | <code>https://mcp.unitpost.com/mcp</code> | OAuth | 🔐 auth required | [Unitpost](https://www.unitpost.com/ai/mcp) |
-| [WA MCP](https://appside.build/mcp-servers/wa-mcp/) | <code>https://server.wa-mcp.com/mcp</code> | OAuth | 🔐 auth required | [WA MCP](https://wa-mcp.com/) |
+| [WhatsApp MCP](https://appside.build/mcp-servers/wa-mcp/) | <code>https://server.wa-mcp.com/mcp</code> | OAuth | 🔐 auth required | [WhatsApp MCP](https://wa-mcp.com/) |
 | [WriteStack MCP Server](https://appside.build/mcp-servers/writestack-mcp-server/) | <code>https://www.writestack.io/api/mcp/mcp</code> | other | 🔐 auth required | [WriteStack MCP Server](https://www.writestack.io/mcp) |
 | [Zoom](https://appside.build/mcp-servers/zoom/) | <code>https://mcp.zoom.us/mcp/zoom/streamable</code> | OAuth | 🔐 auth required | [Zoom](https://zoom.us/) |
 | [zoomfort](https://appside.build/mcp-servers/zoomfort/) | <code>https://mail.zoomfort.com/mcp</code> | OAuth | 🔐 auth required | [zoomfort](https://zoomfort.com/) |
@@ -739,6 +742,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [Upgrowth Growth Toolkit](https://appside.build/mcp-servers/upgrowth-growth-toolkit/) | <code>https://upgrowth.in/connected-app/mcp</code> | other | ✅ handshake · 29 tools | [Upgrowth Growth Toolkit](https://github.com/upGrowth-in/upgrowth-growth-toolkit) |
 | [Vaaya](https://appside.build/mcp-servers/vaaya/) | <code>https://vaaya.ai/mcp</code> | API Key | ✅ handshake · 14 tools | [Vaaya](https://github.com/vaaya-ai/vaaya-mcp) |
 | [Verifieddr Cli](https://appside.build/mcp-servers/verifieddr-cli/) | <code>https://verifieddr.com/api/mcp</code> | other | 🔐 auth required | [Verifieddr Cli](https://github.com/VerifiedDR/verifieddr-cli) |
+| [WordRadar](https://appside.build/mcp-servers/wordradar/) | <code>https://www.wordradar.dev/mcp</code> | API Key | ✅ handshake · 9 tools | [WordRadar](https://www.wordradar.dev/) |
 | [Worldclock](https://appside.build/mcp-servers/worldclock/) | <code>https://worldclock.pro/mcp</code> | other | ✅ handshake · 5 tools | [Worldclock](https://github.com/worldclockpro/worldclock-mcp) |
 | [wpwriter.com/docs/mcp](https://appside.build/mcp-servers/wpwriter-com-docs-mcp/) | <code>https://mcp.wpwriter.com/mcp</code> | OAuth | 🔐 auth required | [wpwriter.com/docs/mcp](https://www.wpwriter.com/docs/mcp) |
 | [Yg3](https://appside.build/mcp-servers/yg3/) | <code>https://mcp.yg3.ai/mcp</code> | OAuth | 🔐 auth required | [Yg3](https://github.com/YG3-ai/yg3-mcp) |
@@ -909,6 +913,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [Avalanche](https://appside.build/mcp-servers/avalanche/) | <code>https://build.avax.network/api/mcp</code> | other | ✅ handshake · 47 tools | [Avalanche](https://build.avax.network/docs/tooling/ai-llm) |
 | [Axiomseal](https://appside.build/mcp-servers/axiomseal/) | <code>https://mcp.axiomseal.com/mcp</code> | OAuth | 🔐 auth required | [Axiomseal](https://github.com/vasicm1/axiomseal-claude-plugin) |
 | [Basepay Readiness Service](https://appside.build/mcp-servers/basepay-readiness-service/) | <code>https://x402.chikocorp.com/mcp</code> | other | ✅ handshake · 3 tools | [Basepay Readiness Service](https://github.com/chico10117/basepay-readiness-service) |
+| [BlockVectra](https://appside.build/mcp-servers/blockvectra/) | <code>https://docs.blockvectra.com/mcp</code> | Open | ✅ handshake · 15 tools | [BlockVectra](https://github.com/blockvectra/mcp) |
 | [Bobai Buyburn](https://appside.build/mcp-servers/bobai-buyburn/) | <code>https://brainonbnb.com/mcp</code> | API Key | ✅ handshake · 30 tools | [Bobai Buyburn](https://github.com/mmxrealQQ/bobai-buyburn) |
 | [BotsRated](https://appside.build/mcp-servers/botsrated/) | <code>https://botsrated.com/mcp</code> | API Key | ✅ handshake · 9 tools | [BotsRated](https://github.com/botsrated/botsrated) |
 | [Brick Blue](https://appside.build/mcp-servers/brick-blue/) | <code>https://brick.blue/mcp</code> | other | ✅ handshake · 14 tools | [Brick Blue](https://github.com/brick-blue/brick-blue-mcp) |
@@ -986,6 +991,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [X402 Gas Api](https://appside.build/mcp-servers/x402-gas-api/) | <code>https://x402-gas-api.vercel.app/mcp</code> | API Key | ✅ handshake · 4 tools | [X402 Gas Api](https://github.com/dlrjsdl200-byte/x402-gas-api) |
 | [X402 Seller](https://appside.build/mcp-servers/x402-seller/) | <code>https://x402-seller-m8nx.onrender.com/mcp</code> | other | ✅ handshake · 7 tools | [X402 Seller](https://github.com/wyattpalm2-eng/x402-seller) |
 | [X402watch](https://appside.build/mcp-servers/x402watch/) | <code>https://api.x402.printmoneylab.com/mcp</code> | other | ✅ handshake · 5 tools | [X402watch](https://github.com/printmoneylab/x402watch) |
+| [XGR MCP Gateway](https://appside.build/mcp-servers/xgr-mcp-gateway/) | <code>https://mcp.xgr.network/mcp</code> | Open | ✅ handshake · 112 tools | [XGR MCP Gateway](https://xgr.network/) |
 | [ZenVault](https://appside.build/mcp-servers/zenvault/) | <code>https://api.zenvault.eu/mcp</code> | API Key | ✅ handshake · 44 tools | [ZenVault](https://zenvault.eu/) |
 
 ## Commerce
@@ -1493,7 +1499,6 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [Airfare Brain](https://appside.build/mcp-servers/airfare-brain/) | <code>https://airfarebrain.com/mcp</code> | Open | ✅ handshake · 5 tools | [Airfare Brain](https://airfarebrain.com/) |
 | [Amcharts5](https://appside.build/mcp-servers/amcharts5/) | <code>https://mcp.amcharts.com/mcp</code> | other | ✅ handshake · 12 tools | [Amcharts5](https://github.com/amcharts/amcharts5-mcp) |
 | [Api](https://appside.build/mcp-servers/api/) | <code>https://api.purplegrain.com/mcp</code> | OAuth | 🔐 auth required | [Api](https://github.com/purplegrain/api) |
-| [Atlas Red](https://appside.build/mcp-servers/atlas-red/) | <code>https://app.atlas-red.com/mcp</code> | OAuth | 🔐 auth required | [Atlas Red](https://atlas-red.com/) |
 | [Award Travel Finder](https://appside.build/mcp-servers/award-travel-finder/) | <code>https://mcp.awardtravelfinder.com/mcp</code> | other | 🔐 auth required | [Award Travel Finder](https://github.com/AwardTravelFinder/mcp) |
 | [Blinkcodes Agent Interfaces](https://appside.build/mcp-servers/blinkcodes-agent-interfaces/) | <code>https://blinkcodes.com/mcp</code> | other | ✅ handshake · 3 tools | [Blinkcodes Agent Interfaces](https://github.com/delneg/blinkcodes-agent-interfaces) |
 | [Breckenwander Travel Connector](https://appside.build/mcp-servers/breckenwander-travel-connector/) | <code>https://mcp.breckenwander.com/mcp</code> | API Key | ✅ handshake · 4 tools | [Breckenwander Travel Connector](https://github.com/durwardjohnson/breckenwander-travel-connector) |
