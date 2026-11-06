@@ -1,0 +1,8 @@
+{
+  "name": "GC Airport Transfers",
+  "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp",
+  "category": "Travel & Local",
+  "site": "https://gc-airporttransfers.com.au/ai-agent-gateway/",
+  "auth": "OAuth",
+  "maintainer": "GC Airport Transfers"
+}
