@@ -8162,6 +8162,20 @@
     }
   },
   {
+    "slug": "gc-airport-transfers",
+    "name": "GC Airport Transfers",
+    "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp",
+    "category": "Travel & Local",
+    "auth": "OAuth",
+    "maintainer": "GC Airport Transfers",
+    "site": "https://gc-airporttransfers.com.au/ai-agent-gateway/",
+    "check": {
+      "status": "auth_required",
+      "checkedAt": "2026-11-06T02:17:30.062Z",
+      "toolCount": null
+    }
+  },
+  {
     "slug": "gemalli",
     "name": "Gemalli",
     "url": "https://gemalli.com/api/mcp",

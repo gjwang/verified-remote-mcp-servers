@@ -2,7 +2,7 @@
 
 Every server is checked with a real MCP handshake: initialize + tools/list for open servers, and a 401 auth challenge for protected ones. Failures are removed. PRs are checked automatically and merged within a day — no waiting months. Checks are dated observations; auth challenges establish reachability, and we never invoke tools.
 
-1722 servers · 1013 handshakes passed · 709 require authentication · 18 categories
+1723 servers · 1013 handshakes passed · 710 require authentication · 18 categories
 
 [Add a server](CONTRIBUTING.md) · [Data license: CC BY 4.0](LICENSE-DATA) · [Code license: MIT](LICENSE)
 
@@ -1507,6 +1507,7 @@ Every server is checked with a real MCP handshake: initialize + tools/list for o
 | [Feminiq Rides](https://appside.build/mcp-servers/feminiq-rides/) | <code>https://www.feminiqrides.nl/mcp</code> | Open | ✅ handshake · 6 tools | [Feminiq Rides](https://www.feminiqrides.nl/) |
 | [Flight Seatmap](https://appside.build/mcp-servers/flight-seatmap/) | <code>https://mcp.flightseatmap.com/mcp</code> | OAuth | 🔐 auth required | [Flight Seatmap](https://github.com/FlightSeatmap/mcp) |
 | [GateRoam](https://appside.build/mcp-servers/gateroam/) | <code>https://gateroam.com/mcp</code> | OAuth | 🔐 auth required | [GateRoam](https://gateroam.com/?utm_source=github.com&utm_medium=directory&utm_campaign=mcp-listing) |
+| [GC Airport Transfers](https://appside.build/mcp-servers/gc-airport-transfers/) | <code>https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp</code> | OAuth | 🔐 auth required | [GC Airport Transfers](https://gc-airporttransfers.com.au/ai-agent-gateway/) |
 | [Geospark](https://appside.build/mcp-servers/geospark/) | <code>https://geospark.terrascout.app/mcp</code> | other | ✅ handshake · 21 tools | [Geospark](https://github.com/Maz2580/geospark) |
 | [Google Maps](https://appside.build/mcp-servers/google-maps/) | <code>https://mapstools.googleapis.com/mcp</code> | API Key | ✅ handshake · 5 tools | [Google](https://developers.google.com/maps/ai/grounding-lite/reference/mcp) |
 | [Hungry Esim](https://appside.build/mcp-servers/hungry-esim/) | <code>https://api.hungry-esim.com/mcp</code> | OAuth | ✅ handshake · 10 tools | [Hungry Esim](https://github.com/kangih90/hungry-esim-mcp) |
